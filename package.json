@@ -17,7 +17,7 @@
   },
   "name": "preentrega3",
   "version": "1.0.0",
-  "main": "productManager.js",
+  "main": "app.js",
   "type": "module",
   "scripts": {
     "start": "node ./src/app.js",
@@ -25,15 +25,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Leonardoisraelcortez/PreEntrega3.git"
+    "url": "git+https://github.com/Leonardoisraelcortez/Leonardoisraelcortez-PreEntrega3-coderhouse.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Leonardoisraelcortez/PreEntrega3.git/issues"
+    "url": "https://github.com/Leonardoisraelcortez/Leonardoisraelcortez-PreEntrega3-coderhouse.git/issues"
   },
-  "homepage": "https://github.com/Leonardoisraelcortez/PreEntrega3.git#readme",
+  "homepage": "https://github.com/Leonardoisraelcortez/Leonardoisraelcortez-PreEntrega3-coderhouse.git#readme",
   "description": "",
   "devDependencies": {
     "@faker-js/faker": "^8.3.1"
