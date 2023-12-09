@@ -1,0 +1,20 @@
+<div class="container">
+    <div style="padding: 80px"; class="row">
+        {{#each products}}
+            <div class="card" style="width: 18rem;">
+                <p style="text-align: left;" class="card-text"> Id: {{this._id}}</p>
+                <img style="margin: 0 auto; width:150px; text-align: center;" src="{{this.thumbnail}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h1 style="text-align: center; font-size:25px;" class="card-text"> {{this.title}}</h1>
+                    <h2 style="text-align: center; font-size:20px;" class="card-text"> {{this.description}}</h2>
+                    <h2 style="text-align: center; font-size:20px;" class="card-text"> $ {{this.price}}</h2>
+
+                    <button id="addCart" style="display: block; margin: 0 auto;" href="#" class="btn btn-primary">Add product</button>
+                </div>
+            </div>
+            {{/each}}
+    </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/socket/products.js"></script>

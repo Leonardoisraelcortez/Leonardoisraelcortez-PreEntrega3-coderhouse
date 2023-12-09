@@ -1,0 +1,113 @@
+[
+	{
+		"title": "actualizado",
+		"description": "en excelente estado",
+		"price": 7000,
+		"thumbnail": "Sin imagen",
+		"code": "799",
+		"stock": 8,
+		"id": 1
+	},
+	{
+		"title": "producto 2",
+		"description": "samsung",
+		"price": 500,
+		"thumbnail": "Sin imagen",
+		"code": "abc456",
+		"stock": 8,
+		"id": 2
+	},
+	{
+		"title": "producto 3",
+		"description": "iphone",
+		"price": 120,
+		"thumbnail": "Sin imagen",
+		"code": "abc789",
+		"stock": 8,
+		"id": 3
+	},
+	{
+		"title": "producto 4",
+		"description": "motorolla",
+		"price": 1300,
+		"thumbnail": "Sin imagen",
+		"code": "def123",
+		"stock": 8,
+		"id": 4
+	},
+	{
+		"title": "producto 5",
+		"description": "heladera",
+		"price": 200,
+		"thumbnail": "Sin imagen",
+		"code": "def456",
+		"stock": 8,
+		"id": 5
+	},
+	{
+		"title": "producto 6",
+		"description": "cocina",
+		"price": 50,
+		"thumbnail": "Sin imagen",
+		"code": "def789",
+		"stock": 8,
+		"id": 6
+	},
+	{
+		"title": "producto 7",
+		"description": "microondas",
+		"price": 300,
+		"thumbnail": "Sin imagen",
+		"code": "ghi123",
+		"stock": 8,
+		"id": 7
+	},
+	{
+		"title": "producto 8",
+		"description": "cafetra italiana a vapor",
+		"price": 3000,
+		"thumbnail": "Sin imagen",
+		"code": "ghi456",
+		"stock": 8,
+		"id": 8
+	},
+	{
+		"title": {
+			"title": "producto con descuento",
+			"description": "aprovechalo solo por 3 dias",
+			"category": "oferta",
+			"price": "61",
+			"thumbnail": "noimage",
+			"code": "mnb123",
+			"stock": "1",
+			"status": "true"
+		},
+		"id": 9
+	},
+	{
+		"title": {
+			"title": "producto prueba",
+			"description": "esto es prueba",
+			"category": "hola",
+			"price": "40",
+			"thumbnail": "noimage",
+			"code": "mnb124",
+			"stock": "8",
+			"status": "true"
+		},
+		"id": 10
+	},
+	{
+		"title": {
+			"title": "roca de afilar",
+			"description": "ideal para la cocina",
+			"category": "hola",
+			"price": "41",
+			"thumbnail": "noimage",
+			"code": "4145",
+			"stock": "1414",
+			"status": "true"
+		},
+		"id": 11
+	}
+]

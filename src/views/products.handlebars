@@ -1,0 +1,51 @@
+<h1>Welcome {{first_name}}</h1>
+<a href="http://localhost:8080/logout">LOGOUT</a>
+
+<div class="container">
+    <div style="padding: 80px"; class="row">
+        {{#each products}}
+            <div class="card" style="width: 18rem;">
+                <p style="text-align: left;" class="card-text"> Id: {{this._id}}</p>
+                <img style="margin: 0 auto; width:150px; text-align: center;" src="{{this.thumbnail}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h1 style="text-align: center; font-size:25px;" class="card-text"> {{this.title}}</h1>
+                    <h2 style="text-align: center; font-size:20px;" class="card-text"> {{this.description}}</h2>
+                    <h2 style="text-align: center; font-size:20px;" class="card-text"> $ {{this.price}}</h2>
+
+                    <button style="display: block; margin: 0 auto;" href="#"
+                    class="addProduct"
+                    data-product-id="{{_id}}"
+                    data-cart-id="{{cart}}"
+                    >Add product</button>
+                </div>
+            </div>
+            {{/each}}
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const addProductButtons = document.querySelectorAll('.addProduct');
+
+        addProductButtons.forEach((button) => {
+            button.addEventListener('click', async () => {
+                const productId = button.dataset.productId;
+                const cartId = button.dataset.cartId;
+                try {
+                    const response = await fetch(`http://localhost:8080/api/cart/065188c51063afc94ceef050/product/${productId}`, {
+                        method: 'POST',
+                    });
+
+                    if (!response.ok) {
+                        throw new Error('No se pudo agregar el producto al carrito');
+                    }
+
+                    console.log('Producto agregado al carrito exitosamente');
+
+                } catch (error) {
+                    console.error('Error al agregar el producto al carrito:', error);
+                }
+            });
+        });
+    });
+</script>
